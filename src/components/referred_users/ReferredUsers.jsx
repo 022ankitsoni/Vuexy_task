@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Typography, Button, Checkbox, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TablePagination, IconButton, Select, MenuItem } from '@mui/material';
-import DownloadIcon from '@mui/icons-material/Download'; // Download icon
+import DownloadIcon from '@mui/icons-material/Download'; 
 
 const ReferredUsers = () => {
   const [rowsPerPage, setRowsPerPage] = useState(10);
@@ -16,12 +16,15 @@ const ReferredUsers = () => {
 
   const createData = (select, user, referredId, status, valueEarnings) => ({ select, user, referredId, status, valueEarnings });
 
-  // Sample data for the table
+  
   const rows = [
     createData(<Checkbox size="small" checked={selectedAll} />, 'User 1', 'REF123', 'Active', '$100'),
     createData(<Checkbox size="small" checked={selectedAll} />, 'User 2', 'REF124', 'Inactive', '$200'),
     createData(<Checkbox size="small" checked={selectedAll} />, 'User 3', 'REF125', 'Active', '$300'),
-    // Add more sample rows as needed
+    createData(<Checkbox size="small" checked={selectedAll} />, 'User 4', 'REF126', 'Active', '$300'),
+    createData(<Checkbox size="small" checked={selectedAll} />, 'User 5', 'REF127', 'Active', '$500'),
+    createData(<Checkbox size="small" checked={selectedAll} />, 'User 6', 'REF128', 'Active', '$300'),
+    createData(<Checkbox size="small" checked={selectedAll} />, 'User 7', 'REF129', 'Active', '$400'),
   ];
 
   return (
@@ -34,7 +37,7 @@ const ReferredUsers = () => {
         height: 'auto', 
       }}
     >
-      {/* Header Section */}
+     
       <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: 2 }}>
         <Typography variant="h6" sx={{ flex: 1, color: 'black' }}>
           Referred Users
@@ -59,7 +62,7 @@ const ReferredUsers = () => {
         </Button>
       </Box>
       
-      {/* Table Section */}
+      
       <TableContainer>
         <Table>
           <TableHead>

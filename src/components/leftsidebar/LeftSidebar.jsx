@@ -43,24 +43,24 @@ const LeftSidebar = () => {
         flexDirection: 'column',
         borderRight: '1px solid #ddd',
         p: 2,
-        bgcolor: '#ffffff' // Set background color to white
+        bgcolor: '#ffffff' 
       }}
     >
-      {/* Logo */}
+    
       <Box sx={{ mb: 1, display: 'flex', alignItems: 'center' }}>
         <img
           src={vue_logo}
           alt="Logo"
-          style={{ width: 35, height: 27, marginRight: 16 }} // Adjust size and margin as needed
+          style={{ width: 35, height: 27, marginRight: 16 }} 
         />
         <Typography sx={{ 
-            fontSize: '1.5rem', // Adjust font size as needed
-            fontWeight: 'bold', // Make text bold
-            color: '#000000' // Adjust text color if needed
+            fontSize: '1.5rem',
+            fontWeight: 'bold', 
+            color: '#000000'
           }}>Vuexy</Typography>
       </Box>
 
-      {/* Main Buttons */}
+     
       <Box sx={{ mb: 3 }}>
         <Button startIcon={<DashboardIcon />} sx={{ justifyContent: 'flex-start', width: '100%', mb: 1, color: '#000000', fontSize: '0.78rem', textTransform: 'capitalize' }}>
           dashboard
@@ -75,9 +75,9 @@ const LeftSidebar = () => {
 
       <Divider />
 
-      {/* Apps and Pages */}
+      
       <Box sx={{ mb: 3 }}>
-        <Typography variant="subtitle1" sx={{ mb: 1, color: '#9e9e9e', fontSize: '0.78rem' }}>Apps and Pages</Typography> {/* Heading color set to grey */}
+        <Typography variant="subtitle1" sx={{ mb: 1, color: '#9e9e9e', fontSize: '0.78rem' }}>Apps and Pages</Typography> 
         <Button startIcon={<MailIcon />} sx={{ justifyContent: 'flex-start', width: '100%', mb: 1, color: '#000000', fontSize: '0.78rem', textTransform: 'capitalize' }}>
           email
         </Button>
@@ -124,9 +124,9 @@ const LeftSidebar = () => {
 
       <Divider />
 
-      {/* Components */}
+      
       <Box sx={{ mb: 3 }}>
-        <Typography variant="subtitle1" sx={{ mb: 1, color: '#9e9e9e', fontSize: '0.78rem' }}>Components</Typography> {/* Heading color set to grey */}
+        <Typography variant="subtitle1" sx={{ mb: 1, color: '#9e9e9e', fontSize: '0.78rem' }}>Components</Typography> 
         <Button startIcon={<CardsIcon />} sx={{ justifyContent: 'flex-start', width: '100%', mb: 1, color: '#000000', fontSize: '0.78rem', textTransform: 'capitalize' }}>
           cards
         </Button>
@@ -143,9 +143,9 @@ const LeftSidebar = () => {
 
       <Divider />
 
-      {/* Forms and Tables */}
+      
       <Box sx={{ mb: 3 }}>
-        <Typography variant="subtitle1" sx={{ mb: 1, color: '#9e9e9e', fontSize: '0.78rem' }}>Forms and Tables</Typography> {/* Heading color set to grey */}
+        <Typography variant="subtitle1" sx={{ mb: 1, color: '#9e9e9e', fontSize: '0.78rem' }}>Forms and Tables</Typography> 
         <Button startIcon={<FormElementsIcon />} sx={{ justifyContent: 'flex-start', width: '100%', mb: 1, color: '#000000', fontSize: '0.78rem', textTransform: 'capitalize' }}>
           form elements
         </Button>
@@ -165,9 +165,9 @@ const LeftSidebar = () => {
 
       <Divider />
 
-      {/* Charts and Maps */}
+      
       <Box sx={{ mb: 3 }}>
-        <Typography variant="subtitle1" sx={{ mb: 1, color: '#9e9e9e', fontSize: '0.78rem' }}>Charts and Maps</Typography> {/* Heading color set to grey */}
+        <Typography variant="subtitle1" sx={{ mb: 1, color: '#9e9e9e', fontSize: '0.78rem' }}>Charts and Maps</Typography> 
         <Button startIcon={<ChartsIcon />} sx={{ justifyContent: 'flex-start', width: '100%', mb: 1, color: '#000000', fontSize: '0.78rem', textTransform: 'capitalize' }}>
           charts
         </Button>
@@ -178,9 +178,9 @@ const LeftSidebar = () => {
 
       <Divider />
 
-      {/* MISC */}
+     
       <Box>
-        <Typography variant="subtitle1" sx={{ mb: 1, color: '#9e9e9e', fontSize: '0.78rem' }}>MISC</Typography> {/* Heading color set to grey */}
+        <Typography variant="subtitle1" sx={{ mb: 1, color: '#9e9e9e', fontSize: '0.78rem' }}>MISC</Typography>
         <Button startIcon={<SupportIcon />} sx={{ justifyContent: 'flex-start', width: '100%', mb: 1, color: '#000000', fontSize: '0.78rem', textTransform: 'capitalize' }}>
           support
         </Button>

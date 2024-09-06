@@ -1,15 +1,15 @@
 import React from 'react';
 import Header from './components/header/Header';
-import ReferredUsers from './components/referred_users/ReferredUsers'; // Import ReferredUsers
-import HowToUse from './components/how_to_use/HowToUse'; // Import HowToUse
-import InviteYourFriends from './components/invite_your_friends/InviteYourFriends'; // Import InviteYourFriends
-import LeftSidebar from './components/leftsidebar/LeftSidebar'; // Import LeftSidebar
+import ReferredUsers from './components/referred_users/ReferredUsers'; 
+import HowToUse from './components/how_to_use/HowToUse'; 
+import InviteYourFriends from './components/invite_your_friends/InviteYourFriends'; 
+import LeftSidebar from './components/leftsidebar/LeftSidebar'; 
 import { Box, Card, CardContent, Typography } from '@mui/material';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet'; // Dollar icon
-import LocalOfferIcon from '@mui/icons-material/LocalOffer'; // Gift icon
-import PersonAddIcon from '@mui/icons-material/PersonAdd'; // Signup icon
-import AutoGraphIcon from '@mui/icons-material/AutoGraph'; // Infinite icon
+import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
+import LocalOfferIcon from '@mui/icons-material/LocalOffer'; 
+import PersonAddIcon from '@mui/icons-material/PersonAdd'; 
+import AutoGraphIcon from '@mui/icons-material/AutoGraph'; 
 
 function App() {
   return (
@@ -18,18 +18,18 @@ function App() {
         sx={{ 
           display: 'flex', 
           height: '100vh',
-          backgroundColor: '#f5f5f5', // Light grey background color for the whole view
-          padding: 2, // Padding around the entire content area
+          backgroundColor: '#f5f5f5', 
+          padding: 2, 
           paddingLeft: 0
         }}
       >
         <Box 
           sx={{ 
-            width: '200px', // Fixed width for the sidebar
-            marginRight: 5, // Space between sidebar and main content
-            backgroundColor: '#fff', // White background for the sidebar to make it stand out
-            borderRadius: 1, // Rounded corners for a card-like appearance
-            boxShadow: 2 // Shadow effect to enhance the card-like appearance
+            width: '200px', 
+            marginRight: 5, 
+            backgroundColor: '#fff', 
+            borderRadius: 1, 
+            boxShadow: 2 
           }}
         >
           <LeftSidebar />
@@ -39,45 +39,45 @@ function App() {
             flexGrow: 1, 
             display: 'flex', 
             flexDirection: 'column', 
-            padding: 2 // Padding inside the main content area
+            padding: 2 
           }}
         >
-          {/* Header Section */}
+          
           <Box 
             sx={{ 
               height: 60,
-              backgroundColor: '#fff', // White background for the header
-              borderRadius: 2, // Rounded corners
-              boxShadow: 2, // Shadow effect for the header
-              marginBottom: 3 // Space below the header
+              backgroundColor: '#fff', 
+              borderRadius: 2, 
+              boxShadow: 2, 
+              marginBottom: 3 
             }}
           >
             <Header />
           </Box>
           
-          {/* Cards Section */}
+       
           <Box 
             sx={{ 
               display: 'flex', 
-              justifyContent: 'space-between', // Ensure equal spacing between cards
-              gap: 2, // Space between cards (adjust as needed)
-              flexWrap: 'wrap', // Allow wrapping if needed
-              backgroundColor: '#f5f5f5', // Light grey background for the card area
-              marginBottom: 3 // Space below the card section
+              justifyContent: 'space-between', 
+              gap: 2, 
+              flexWrap: 'wrap', 
+              backgroundColor: '#f5f5f5', 
+              marginBottom: 3 
             }}
           >
             <Card 
               sx={{ 
-                flex: 1, // Allow cards to grow equally
-                height: 120, // Reduced height of the card
+                flex: 1, 
+                height: 120, 
                 display: 'flex', 
                 alignItems: 'center', 
-                justifyContent: 'space-between', // Space items
-                padding: 2, // Padding inside the card
-                backgroundColor: '#fff', // White background for each card
-                borderRadius: 1, // Rounded corners for the card
-                boxShadow: 3, // Shadow effect for card
-                minWidth: 200, // Ensure cards have a minimum width
+                justifyContent: 'space-between', 
+                padding: 2, 
+                backgroundColor: '#fff', 
+                borderRadius: 1,
+                boxShadow: 3, 
+                minWidth: 200, 
               }}
             >
               <CardContent sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
@@ -86,14 +86,14 @@ function App() {
               </CardContent>
               <Box
                 sx={{
-                  backgroundColor: 'purple', // Purple background
-                  borderRadius: '50%', // Circular shape
-                  width: 40, // Diameter of the circle
+                  backgroundColor: 'purple', 
+                  borderRadius: '50%', 
+                  width: 40, 
                   height: 40,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#fff' // White icon color
+                  color: '#fff' 
                 }}
               >
                 <AccountBalanceWalletIcon />
@@ -101,16 +101,16 @@ function App() {
             </Card>
             <Card 
               sx={{ 
-                flex: 1, // Allow cards to grow equally
-                height: 120, // Reduced height of the card
+                flex: 1, 
+                height: 120, 
                 display: 'flex', 
                 alignItems: 'center', 
-                justifyContent: 'space-between', // Space items
-                padding: 2, // Padding inside the card
-                backgroundColor: '#fff', // White background for each card
-                borderRadius: 1, // Rounded corners for the card
-                boxShadow: 3, // Shadow effect for card
-                minWidth: 200, // Ensure cards have a minimum width
+                justifyContent: 'space-between', 
+                padding: 2, 
+                backgroundColor: '#fff', 
+                borderRadius: 1, 
+                boxShadow: 3, 
+                minWidth: 200, 
               }}
             >
               <CardContent sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
@@ -119,14 +119,14 @@ function App() {
               </CardContent>
               <Box
                 sx={{
-                  backgroundColor: 'green', // Green background
-                  borderRadius: '50%', // Circular shape
-                  width: 40, // Diameter of the circle
+                  backgroundColor: 'green',
+                  borderRadius: '50%', 
+                  width: 40, 
                   height: 40,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#fff' // White icon color
+                  color: '#fff' 
                 }}
               >
                 <LocalOfferIcon />
@@ -134,16 +134,16 @@ function App() {
             </Card>
             <Card 
               sx={{ 
-                flex: 1, // Allow cards to grow equally
-                height: 120, // Reduced height of the card
+                flex: 1, 
+                height: 120, 
                 display: 'flex', 
                 alignItems: 'center', 
-                justifyContent: 'space-between', // Space items
-                padding: 2, // Padding inside the card
-                backgroundColor: '#fff', // White background for each card
-                borderRadius: 1, // Rounded corners for the card
-                boxShadow: 3, // Shadow effect for card
-                minWidth: 200, // Ensure cards have a minimum width
+                justifyContent: 'space-between', 
+                padding: 2, 
+                backgroundColor: '#fff', 
+                borderRadius: 1, 
+                boxShadow: 3, 
+                minWidth: 200, 
               }}
             >
               <CardContent sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
@@ -152,14 +152,14 @@ function App() {
               </CardContent>
               <Box
                 sx={{
-                  backgroundColor: 'red', // Red background
-                  borderRadius: '50%', // Circular shape
-                  width: 40, // Diameter of the circle
+                  backgroundColor: 'red', 
+                  borderRadius: '50%',
+                  width: 40, 
                   height: 40,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#fff' // White icon color
+                  color: '#fff' 
                 }}
               >
                 <PersonAddIcon />
@@ -167,16 +167,16 @@ function App() {
             </Card>
             <Card 
               sx={{ 
-                flex: 1, // Allow cards to grow equally
-                height: 120, // Reduced height of the card
+                flex: 1, 
+                height: 120, 
                 display: 'flex', 
                 alignItems: 'center', 
-                justifyContent: 'space-between', // Space items
-                padding: 2, // Padding inside the card
-                backgroundColor: '#fff', // White background for each card
-                borderRadius: 1, // Rounded corners for the card
-                boxShadow: 3, // Shadow effect for card
-                minWidth: 200, // Ensure cards have a minimum width
+                justifyContent: 'space-between', 
+                padding: 2, 
+                backgroundColor: '#fff', 
+                borderRadius: 1, 
+                boxShadow: 3, 
+                minWidth: 200, 
               }}
             >
               <CardContent sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
@@ -185,14 +185,14 @@ function App() {
               </CardContent>
               <Box
                 sx={{
-                  backgroundColor: 'skyblue', // Skyblue background
-                  borderRadius: '50%', // Circular shape
-                  width: 40, // Diameter of the circle
+                  backgroundColor: 'skyblue', 
+                  borderRadius: '50%', 
+                  width: 40, 
                   height: 40,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#fff' // White icon color
+                  color: '#fff' 
                 }}
               >
                 <AutoGraphIcon />
@@ -200,54 +200,54 @@ function App() {
             </Card>
           </Box>
           
-          {/* HowToUse and InviteYourFriends Section */}
+          
           <Box 
             sx={{ 
               display: 'flex', 
-              gap: 2, // Space between components
-              marginBottom: 3 // Space below the components
+              gap: 2, 
+              marginBottom: 3 
             }}
           >
             <Box 
               sx={{ 
-                flex: 1, // Allow HowToUse to grow
-                backgroundColor: '#f5f5f5', // Light grey background
-                padding: 0, // Padding inside the HowToUse section
-                borderRadius: 1, // Rounded corners
-                boxShadow: 2 // Shadow effect for the HowToUse section
+                flex: 1, 
+                backgroundColor: '#f5f5f5', 
+                padding: 0, 
+                borderRadius: 1, 
+                boxShadow: 2 
               }}
             >
               <HowToUse />
             </Box>
             <Box 
               sx={{ 
-                flex: 1, // Allow InviteYourFriends to grow
-                backgroundColor: '#f5f5f5', // Light grey background
-                padding: 0, // Padding inside the InviteYourFriends section
-                borderRadius: 1, // Rounded corners
-                boxShadow: 2 // Shadow effect for the InviteYourFriends section
+                flex: 1, 
+                backgroundColor: '#f5f5f5', 
+                padding: 0, 
+                borderRadius: 1, 
+                boxShadow: 2 
               }}
             >
               <InviteYourFriends />
             </Box>
           </Box>
           
-          {/* ReferredUsers Section */}
+          
           <Box 
             sx={{ 
               flexGrow: 1, 
-              marginBottom: 0, // Space below the ReferredUsers section
-              flex: 1, // Allow InviteYourFriends to grow
-              backgroundColor: '#f5f5f5', // Light grey background
-              padding: 0, // Padding inside the InviteYourFriends section
-              borderRadius: 1, // Rounded corners
-              boxShadow: 2 // Shadow effect for the InviteYourFriends section
+              marginBottom: 0, 
+              flex: 1, 
+              backgroundColor: '#f5f5f5', 
+              padding: 0, 
+              borderRadius: 1, 
+              boxShadow: 2 
             }}
           >
             <ReferredUsers />
           </Box>
           
-          {/* Routes Section */}
+          
           <Box 
             sx={{ 
               flexGrow: 1 

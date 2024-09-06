@@ -6,13 +6,13 @@ const Header = () => {
   return (
     <AppBar position="static" sx={{ backgroundColor: 'white', boxShadow: 'none', mb: 2 }}>
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-        {/* Search Bar */}
+        
         <Box 
           sx={{ 
             flexGrow: 1, 
             display: 'flex', 
             alignItems: 'center', 
-            backgroundColor: 'white', // White background for the search bar
+            backgroundColor: 'white', 
             borderRadius: 1, 
           }}
         >
@@ -23,14 +23,14 @@ const Header = () => {
           />
         </Box>
 
-        {/* Icon Buttons */}
+       
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <IconButton
             sx={{
               color: 'black',
               backgroundColor: 'transparent',
               '&:hover': {
-                backgroundColor: '#f0f0f0' // Optional: hover effect
+                backgroundColor: '#f0f0f0'
               },
             }}
           >
@@ -41,7 +41,7 @@ const Header = () => {
               color: 'black',
               backgroundColor: 'transparent',
               '&:hover': {
-                backgroundColor: '#f0f0f0' // Optional: hover effect
+                backgroundColor: '#f0f0f0' 
               },
             }}
           >
@@ -52,7 +52,7 @@ const Header = () => {
               color: 'black',
               backgroundColor: 'transparent',
               '&:hover': {
-                backgroundColor: '#f0f0f0' // Optional: hover effect
+                backgroundColor: '#f0f0f0' 
               },
             }}
           >
@@ -63,7 +63,7 @@ const Header = () => {
               color: 'black',
               backgroundColor: 'transparent',
               '&:hover': {
-                backgroundColor: '#f0f0f0' // Optional: hover effect
+                backgroundColor: '#f0f0f0' 
               },
             }}
           >
@@ -74,7 +74,7 @@ const Header = () => {
               color: 'black',
               backgroundColor: 'transparent',
               '&:hover': {
-                backgroundColor: '#f0f0f0' // Optional: hover effect
+                backgroundColor: '#f0f0f0' 
               },
             }}
           >
