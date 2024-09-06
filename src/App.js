@@ -248,15 +248,7 @@ function App() {
           </Box>
           
           
-          <Box 
-            sx={{ 
-              flexGrow: 1 
-            }}
-          >
-            <Routes>
-              <Route path='/' element={<ReferredUsers />} />
-            </Routes>
-          </Box>
+          
         </Box>
       </Box>
     </BrowserRouter>
